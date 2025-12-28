@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-image: url("./img/bg-top.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0px 100px 50px 100px;
+    height: 90vh;
+}
+
+.picture {
+    transition: transform 0.3s ease;
+    width: 400px;
+}
+
+.picture:hover {
+    transform: scale(1.05);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.about-me:hover {
+    transform: scale(1.05);
+}
+
+.role {
+    text-align: center;
+    color: #FFD787;
+    font-family: "Vina Sans", sans-serif;
+    font-size: 40px;
+    background-color: #4E2B1C;
+    padding: 0px 5px;
+    width: fit-content;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Viga, sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.605);
+}
+
+.achievements {
+    background-color: #211106;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medals {
+    margin-top: 50px;
+    display: flex;
+}
+
+.medal {
+    position: relative;
+}
+
+.medal>img {
+    transform: translateY(-60px);
+}
+
+.medal>p {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px) scale(0);
+    color: #FFF9BC;
+    font-family: Viga, sans-serif;
+    text-shadow: 0px 0px 6px rgba(255, 242, 101, 0.441);
+    font-size: 30px;
+    text-align: center;
+}
+
+.medal:hover>img {
+    transform: scale(1.1);
+}
+
+.medal:hover>p {
+    transform: translateX(-50%) translateY(0px) scale(1);
+
+}
+
+.gallery {
+    background-color: #211106;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.poster {
+    width: 200px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+}
+
+.poster>img {
+    width: 100%;
+}
+
+#phone {
+    z-index: 5;
+}
+
+#poster1 {
+    z-index: 4;
+    transform: translateX(calc(-50% - 100px)) translateY(50px) rotate(-28deg);
+}
+
+#poster2 {
+    z-index: 3;
+    transform: translateX(calc(-50% - 230px)) translateY(50px) rotate(-28deg);
+}
+
+#poster3 {
+    z-index: 2;
+    transform: translateX(calc(-50% + 100px)) translateY(50px) rotate(28deg);
+}
+
+#poster4 {
+    z-index: 1;
+    transform: translateX(calc(-50% + 230px)) translateY(50px) rotate(28deg);
+}
+
+#poster1,
+#poster2,
+#poster3,
+#poster4 {
+    box-shadow: 0px 0px 15px rgba(255, 230, 0, 0.366);
+}
+
+#poster1.open {
+    transform: translateX(calc(-50% - 100%)) translateY(50px) rotate(0deg);
+}
+
+#poster2.open {
+    z-index: 3;
+    transform: translateX(calc(-50% - 220%)) translateY(50px) rotate(0deg);
+}
+
+#poster3.open {
+    z-index: 2;
+    transform: translateX(calc(-50% + 100%)) translateY(50px) rotate(0deg);
+}
+
+#poster4.open {
+    z-index: 1;
+    transform: translateX(calc(-50% + 220%)) translateY(50px) rotate(0deg);
+}
+
+.my-contact {
+    background-image: url("./img/bg-bottom.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    gap: 60px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-card:hover {
+    transform: scale(1.1);
+}
+
+.contact-card>img {
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+footer {
+    color: white;
+    padding: 20px 30px;
+    background-color: #211106;
+    font-size: 12px;
+}
